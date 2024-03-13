@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./assets/Fonts/OTF/ClashDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: 'ClashDisplayBold';
+  src: url('./assets/Fonts/OTF/ClashDisplay-Bold.otf');
+}
+
+@font-face {
+  font-family: 'ClashDisplaySemiBold';
+  src: url('./assets/Fonts/OTF/ClashDisplay-Semibold.otf');
+}
+
+@font-face {
+  font-family: 'ClashDisplayLight';
+  src: url('./assets/Fonts/OTF/ClashDisplay-Light.otf');
+}
+
+
+:root {
+  --primary-color: #fdbb11;
+}
+
+
+body {
+  background: var(--primary-color);
+  font-family: "Manrope", sans-serif;
+}
+
+
+
+.text_slider_main{
+  /* text-align: center;
+  margin-top:30px ; */
+}
+.text_slider_flex_row{
+  animation: slide 2s ease-in-out infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
